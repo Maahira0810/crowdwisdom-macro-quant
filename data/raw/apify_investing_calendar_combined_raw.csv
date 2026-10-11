@@ -1,0 +1,201 @@
+actual,currency,data_type,date,event,forecast,id,importance,previous,retrieved_at,time,zone
+,,economic_calendar_event,07/09/2026,United States - Labor Day,,98,,,2026-10-08T03:58:44.933155,All Day,united states
+4.834%,USD,economic_calendar_event,09/09/2026,10-Year Note Auction,,556556,high,4.683%,2026-10-08T03:58:45.024169,18:00,united states
+,USD,economic_calendar_event,10/09/2026,U.S. President Trump Speaks,,557172,high,,2026-10-08T03:58:45.063730,02:15,united states
+206K,USD,economic_calendar_event,10/09/2026,Initial Jobless Claims,205K,556514,high,207K,2026-10-08T03:58:45.124792,13:30,united states
+0.4%,USD,economic_calendar_event,10/09/2026,PPI (MoM)  (Aug),0.4%,555845,high,0.1%,2026-10-08T03:58:45.154799,13:30,united states
+3.98M,USD,economic_calendar_event,10/09/2026,Existing Home Sales  (Aug),3.98M,555854,high,4.06M,2026-10-08T03:58:45.189288,15:00,united states
+-0.391M,USD,economic_calendar_event,10/09/2026,Crude Oil Inventories,-1.400M,556800,high,-4.450M,2026-10-08T03:58:45.225074,17:00,united states
+5.308%,USD,economic_calendar_event,10/09/2026,30-Year Bond Auction,,556751,high,5.216%,2026-10-08T03:58:45.254872,18:01,united states
+0.3%,USD,economic_calendar_event,11/09/2026,Core CPI (MoM)  (Aug),0.2%,555916,high,0.2%,2026-10-08T03:58:45.291761,13:30,united states
+0.4%,USD,economic_calendar_event,11/09/2026,CPI (MoM)  (Aug),0.4%,555913,high,0.1%,2026-10-08T03:58:45.325008,13:30,united states
+3.4%,USD,economic_calendar_event,11/09/2026,CPI (YoY)  (Aug),3.4%,555915,high,3.4%,2026-10-08T03:58:45.360932,13:30,united states
+1.4%,USD,economic_calendar_event,16/09/2026,Core Retail Sales (MoM)  (Aug),0.6%,556265,high,-0.2%,2026-10-08T03:58:45.397018,13:30,united states
+1.2%,USD,economic_calendar_event,16/09/2026,Retail Sales (MoM)  (Aug),0.8%,556266,high,-0.5%,2026-10-08T03:58:45.427231,13:30,united states
+-0.640M,USD,economic_calendar_event,16/09/2026,Crude Oil Inventories,-1.600M,557314,high,-0.391M,2026-10-08T03:58:45.466236,15:30,united states
+,USD,economic_calendar_event,16/09/2026,FOMC Economic Projections,,556898,high,,2026-10-08T03:58:45.505579,19:00,united states
+,USD,economic_calendar_event,16/09/2026,FOMC Statement,,557183,high,,2026-10-08T03:58:45.537491,19:00,united states
+4.00%,USD,economic_calendar_event,16/09/2026,Fed Interest Rate Decision,4.00%,516972,high,3.75%,2026-10-08T03:58:45.626219,19:00,united states
+,USD,economic_calendar_event,16/09/2026,FOMC Press Conference,,556899,high,,2026-10-08T03:58:45.680130,19:30,united states
+196K,USD,economic_calendar_event,17/09/2026,Initial Jobless Claims,207K,556900,high,206K,2026-10-08T03:58:45.707037,13:30,united states
+37.8,USD,economic_calendar_event,17/09/2026,Philadelphia Fed Manufacturing Index  (Sep),31.3,556348,high,47.4,2026-10-08T03:58:45.736535,13:30,united states
+,USD,economic_calendar_event,22/09/2026,U.S. President Trump Speaks,,557868,high,,2026-10-08T03:58:45.785751,14:55,united states
+57.0,USD,economic_calendar_event,23/09/2026,S&P Global Manufacturing PMI  (Sep),53.6,556648,high,53.9,2026-10-08T03:58:45.816462,14:45,united states
+58.7,USD,economic_calendar_event,23/09/2026,S&P Global Services PMI  (Sep),55.8,556650,high,56.5,2026-10-08T03:58:45.844782,14:45,united states
+2.969M,USD,economic_calendar_event,23/09/2026,Crude Oil Inventories,-0.700M,557643,high,-0.640M,2026-10-08T03:58:45.884637,15:30,united states
+197K,USD,economic_calendar_event,24/09/2026,Initial Jobless Claims,201K,557448,high,198K,2026-10-08T03:58:45.932461,13:30,united states
+684K,USD,economic_calendar_event,24/09/2026,New Home Sales  (Aug),615K,556734,high,643K,2026-10-08T03:58:45.969516,15:00,united states
+,USD,economic_calendar_event,24/09/2026,U.S. President Trump Speaks,,558103,high,,2026-10-08T03:58:46.009319,15:15,united states
+0.0%,USD,economic_calendar_event,25/09/2026,Durable Goods Orders (MoM)  (Aug),-0.3%,556780,high,0.9%,2026-10-08T03:58:46.049386,13:30,united states
+81.9,USD,economic_calendar_event,29/09/2026,CB Consumer Confidence  (Sep),89.2,556956,high,88.6,2026-10-08T03:58:46.091408,15:00,united states
+7.079M,USD,economic_calendar_event,29/09/2026,JOLTS Job Openings  (Aug),7.230M,556957,high,7.335M,2026-10-08T03:58:46.125271,15:00,united states
+90K,USD,economic_calendar_event,30/09/2026,ADP Nonfarm Employment Change  (Sep),73K,557108,high,36K,2026-10-08T03:58:46.162848,13:15,united states
+0.2%,USD,economic_calendar_event,30/09/2026,Core PCE Price Index (MoM)  (Aug),0.3%,557117,high,0.1%,2026-10-08T03:58:46.196488,13:30,united states
+3.0%,USD,economic_calendar_event,30/09/2026,Core PCE Price Index (YoY)  (Aug),3.3%,557116,high,3.0%,2026-10-08T03:58:46.237587,13:30,united states
+2.2%,USD,economic_calendar_event,30/09/2026,GDP (QoQ)  (Q2),1.5%,557118,high,2.1%,2026-10-08T03:58:46.276858,13:30,united states
+58.8,USD,economic_calendar_event,30/09/2026,Chicago PMI  (Sep),51.2,557128,high,47.1,2026-10-08T03:58:46.313235,14:45,united states
+0.922M,USD,economic_calendar_event,30/09/2026,Crude Oil Inventories,-0.700M,558112,high,2.969M,2026-10-08T03:58:46.344694,15:30,united states
+,USD,economic_calendar_event,30/09/2026,U.S. President Trump Speaks,,558392,high,,2026-10-08T03:58:46.384457,20:30,united states
+197K,USD,economic_calendar_event,01/10/2026,Initial Jobless Claims,201K,557899,high,198K,2026-10-08T03:58:46.471433,13:30,united states
+55.9,USD,economic_calendar_event,01/10/2026,S&P Global Manufacturing PMI  (Sep),57.0,557225,high,53.9,2026-10-08T03:58:46.502816,14:45,united states
+54.5,USD,economic_calendar_event,01/10/2026,ISM Manufacturing PMI  (Sep),54.8,557228,high,54.6,2026-10-08T03:58:46.550795,15:00,united states
+77.9,USD,economic_calendar_event,01/10/2026,ISM Manufacturing Prices  (Sep),72.9,557229,high,71.1,2026-10-08T03:58:46.618532,15:00,united states
+0.1%,USD,economic_calendar_event,02/10/2026,Average Hourly Earnings (MoM)  (Sep),0.3%,557305,high,0.3%,2026-10-08T03:58:46.654720,13:30,united states
+29K,USD,economic_calendar_event,02/10/2026,Nonfarm Payrolls  (Sep),89K,557300,high,133K,2026-10-08T03:58:46.689599,13:30,united states
+4.2%,USD,economic_calendar_event,02/10/2026,Unemployment Rate  (Sep),4.1%,557301,high,4.1%,2026-10-08T03:58:46.731646,13:30,united states
+58.8,USD,economic_calendar_event,05/10/2026,S&P Global Services PMI  (Sep),58.7,557405,high,58.7,2026-10-08T03:58:46.761192,14:45,united states
+54.9,USD,economic_calendar_event,05/10/2026,ISM Non-Manufacturing PMI  (Sep),55.1,557410,high,55.4,2026-10-08T03:58:46.793131,15:00,united states
+74.0,USD,economic_calendar_event,05/10/2026,ISM Non-Manufacturing Prices  (Sep),73.3,557407,high,72.6,2026-10-08T03:58:46.829697,15:00,united states
+-3.186M,USD,economic_calendar_event,07/10/2026,Crude Oil Inventories,1.900M,558550,high,0.922M,2026-10-08T03:58:46.866608,15:30,united states
+5.300%,USD,economic_calendar_event,07/10/2026,10-Year Note Auction,,558344,high,4.834%,2026-10-08T03:58:46.947598,18:00,united states
+,USD,economic_calendar_event,07/10/2026,U.S. President Trump Speaks,,558778,high,,2026-10-08T03:58:46.988251,18:00,united states
+,USD,economic_calendar_event,07/10/2026,FOMC Meeting Minutes,,558345,high,,2026-10-08T03:58:47.023260,19:00,united states
+,,economic_calendar_event,07/09/2026,United States - Labor Day,,98,,,2026-10-08T03:58:47.052485,All Day,united states
+,,economic_calendar_event,07/09/2026,United States - Labor Day,,98,,,2026-10-08T04:10:20.462316,All Day,united states
+3.6%,USD,economic_calendar_event,08/09/2026,NY Fed 1-Year Consumer Inflation Expectations  (Aug),,556546,medium,3.6%,2026-10-08T04:10:20.544531,16:00,united states
+4.474%,USD,economic_calendar_event,08/09/2026,3-Year Note Auction,,556547,medium,4.291%,2026-10-08T04:10:20.730415,18:00,united states
+18.06B,USD,economic_calendar_event,08/09/2026,Consumer Credit  (Jul),11.90B,555670,medium,14.56B,2026-10-08T04:10:20.774560,20:00,united states
+10.00K,USD,economic_calendar_event,09/09/2026,ADP Employment Change Weekly,,557109,medium,11.80K,2026-10-08T04:10:20.823724,13:14,united states
+12.00K,USD,economic_calendar_event,09/09/2026,ADP Employment Change Weekly,,556749,medium,10.00K,2026-10-08T04:10:20.846873,13:15,united states
+,USD,economic_calendar_event,09/09/2026,EIA Short-Term Energy Outlook,,556701,medium,,2026-10-08T04:10:20.873230,17:00,united states
+-0.300M,USD,economic_calendar_event,09/09/2026,API Weekly Crude Oil Stock,-1.300M,556700,medium,-2.600M,2026-10-08T04:10:20.904529,21:30,united states
+,USD,economic_calendar_event,10/09/2026,OPEC Monthly Report,,556600,medium,,2026-10-08T04:10:20.934647,11:00,united states
+"1,774K",USD,economic_calendar_event,10/09/2026,Continuing Jobless Claims,"1,780K",556515,medium,"1,775K",2026-10-08T04:10:20.961670,13:30,united states
+0.2%,USD,economic_calendar_event,10/09/2026,Core PPI (MoM)  (Aug),0.3%,555848,medium,0.3%,2026-10-08T04:10:20.992093,13:30,united states
+4.4%,USD,economic_calendar_event,10/09/2026,Atlanta Fed GDPNow  (Q3),4.7%,556272,medium,4.7%,2026-10-08T04:10:21.026887,14:20,united states
+-2.0%,USD,economic_calendar_event,10/09/2026,Existing Home Sales (MoM)  (Aug),,555851,medium,-1.7%,2026-10-08T04:10:21.095029,15:00,united states
+-0.684M,USD,economic_calendar_event,10/09/2026,Cushing Crude Oil Inventories,,556796,medium,0.080M,2026-10-08T04:10:21.131705,17:00,united states
+"6,741B",USD,economic_calendar_event,10/09/2026,Fed's Balance Sheet,,556864,medium,"6,737B",2026-10-08T04:10:21.169134,21:30,united states
+,USD,economic_calendar_event,11/09/2026,IEA Monthly Report,,556606,medium,,2026-10-08T04:10:21.217992,10:00,united states
+2.4%,USD,economic_calendar_event,11/09/2026,Core CPI (YoY)  (Aug),2.4%,555914,medium,2.5%,2026-10-08T04:10:21.286774,13:30,united states
+4.6%,USD,economic_calendar_event,11/09/2026,Michigan 1-Year Inflation Expectations  (Sep),4.2%,555924,medium,4.0%,2026-10-08T04:10:21.343826,15:00,united states
+3.4%,USD,economic_calendar_event,11/09/2026,Michigan 5-Year Inflation Expectations  (Sep),3.3%,555925,medium,3.3%,2026-10-08T04:10:21.383484,15:00,united states
+45.8,USD,economic_calendar_event,11/09/2026,Michigan Consumer Expectations  (Sep),50.5,555926,medium,51.5,2026-10-08T04:10:21.440194,15:00,united states
+47.8,USD,economic_calendar_event,11/09/2026,Michigan Consumer Sentiment  (Sep),51.0,555928,medium,51.7,2026-10-08T04:10:21.469928,15:00,united states
+,USD,economic_calendar_event,11/09/2026,WASDE Report,,556610,medium,,2026-10-08T04:10:21.499924,17:00,united states
+450,USD,economic_calendar_event,11/09/2026,U.S. Baker Hughes Oil Rig Count,,556512,medium,449,2026-10-08T04:10:21.538304,18:00,united states
+591,USD,economic_calendar_event,11/09/2026,U.S. Baker Hughes Total Rig Count,,556513,medium,588,2026-10-08T04:10:21.570154,18:00,united states
+-167.0B,USD,economic_calendar_event,11/09/2026,Federal Budget Balance  (Aug),-221.1B,555943,medium,-432.0B,2026-10-08T04:10:21.591032,19:00,united states
+136.6K,USD,economic_calendar_event,11/09/2026,CFTC Crude Oil speculative net positions,,556817,medium,129.9K,2026-10-08T04:10:21.656921,20:30,united states
+232.0K,USD,economic_calendar_event,11/09/2026,CFTC Gold speculative net positions,,556815,medium,228.1K,2026-10-08T04:10:21.690357,20:30,united states
+20.9K,USD,economic_calendar_event,11/09/2026,CFTC Nasdaq 100 speculative net positions,,556807,medium,25.9K,2026-10-08T04:10:21.732822,20:30,united states
+-76.0K,USD,economic_calendar_event,11/09/2026,CFTC S&P 500 speculative net positions,,556805,medium,-75.9K,2026-10-08T04:10:21.770124,20:30,united states
+16.30K,USD,economic_calendar_event,15/09/2026,ADP Employment Change Weekly,,557186,medium,12.00K,2026-10-08T04:10:21.816203,13:15,united states
+7.60,USD,economic_calendar_event,15/09/2026,NY Empire State Manufacturing Index  (Sep),14.80,556153,medium,20.60,2026-10-08T04:10:21.859330,13:30,united states
+5.420%,USD,economic_calendar_event,15/09/2026,20-Year Bond Auction,,556886,medium,5.204%,2026-10-08T04:10:21.898689,18:00,united states
+7.140M,USD,economic_calendar_event,15/09/2026,API Weekly Crude Oil Stock,-1.800M,557174,medium,-0.300M,2026-10-08T04:10:21.938032,21:30,united states
+0.6%,USD,economic_calendar_event,16/09/2026,Export Price Index (MoM)  (Aug),0.5%,556264,medium,-1.4%,2026-10-08T04:10:21.977216,13:30,united states
+0.7%,USD,economic_calendar_event,16/09/2026,Import Price Index (MoM)  (Aug),0.4%,556267,medium,-0.3%,2026-10-08T04:10:22.013953,13:30,united states
+1.4%,USD,economic_calendar_event,16/09/2026,Retail Control (MoM)  (Aug),0.4%,556263,medium,-0.4%,2026-10-08T04:10:22.053282,13:30,united states
+0.8%,USD,economic_calendar_event,16/09/2026,Business Inventories (MoM)  (Jul),0.6%,556280,medium,0.1%,2026-10-08T04:10:22.070469,15:00,united states
+0.8%,USD,economic_calendar_event,16/09/2026,Retail Inventories Ex Auto  (Jul),0.7%,556279,medium,-0.4%,2026-10-08T04:10:22.108366,15:00,united states
+-0.342M,USD,economic_calendar_event,16/09/2026,Cushing Crude Oil Inventories,,557319,medium,-0.684M,2026-10-08T04:10:22.236474,15:30,united states
+5.1%,USD,economic_calendar_event,16/09/2026,Atlanta Fed GDPNow  (Q3),4.4%,556273,medium,4.4%,2026-10-08T04:10:22.270905,17:00,united states
+4.1%,USD,economic_calendar_event,16/09/2026,Interest Rate Projection - 1st Yr  (Q3),,556288,medium,3.6%,2026-10-08T04:10:22.301239,19:00,united states
+3.9%,USD,economic_calendar_event,16/09/2026,Interest Rate Projection - 2nd Yr  (Q3),,556286,medium,3.4%,2026-10-08T04:10:22.342698,19:00,united states
+3.6%,USD,economic_calendar_event,16/09/2026,Interest Rate Projection - 3rd Yr  (Q1),,534143,medium,3.1%,2026-10-08T04:10:22.368610,19:00,united states
+4.1%,USD,economic_calendar_event,16/09/2026,Interest Rate Projection - Current  (Q3),,556285,medium,3.8%,2026-10-08T04:10:22.399327,19:00,united states
+3.2%,USD,economic_calendar_event,16/09/2026,Interest Rate Projection - Longer  (Q3),,556287,medium,3.1%,2026-10-08T04:10:22.441289,19:00,united states
+-27.9B,USD,economic_calendar_event,16/09/2026,TIC Net Long-Term Transactions  (Jul),146.3B,556289,medium,174.4B,2026-10-08T04:10:22.468133,21:00,united states
+1.394M,USD,economic_calendar_event,17/09/2026,Building Permits  (Aug),1.400M,556345,medium,1.433M,2026-10-08T04:10:22.500666,13:30,united states
+"1,730K",USD,economic_calendar_event,17/09/2026,Continuing Jobless Claims,"1,780K",556901,medium,"1,769K",2026-10-08T04:10:22.533065,13:30,united states
+1.275M,USD,economic_calendar_event,17/09/2026,Housing Starts  (Aug),1.320M,556346,medium,1.309M,2026-10-08T04:10:22.560146,13:30,united states
+-2.6%,USD,economic_calendar_event,17/09/2026,Housing Starts (MoM)  (Aug),,556341,medium,-9.0%,2026-10-08T04:10:22.599467,13:30,united states
+11.8,USD,economic_calendar_event,17/09/2026,Philly Fed Employment  (Sep),,556352,medium,27.9,2026-10-08T04:10:22.620833,13:30,united states
+5.1%,USD,economic_calendar_event,17/09/2026,Atlanta Fed GDPNow  (Q3),5.1%,556274,medium,5.1%,2026-10-08T04:10:22.658747,14:50,united states
+0.3%,USD,economic_calendar_event,17/09/2026,Pending Home Sales (MoM)  (Aug),-0.2%,556356,medium,-2.6%,2026-10-08T04:10:22.689814,15:00,united states
+2.653%,USD,economic_calendar_event,17/09/2026,10-Year TIPS Auction,,557002,medium,2.438%,2026-10-08T04:10:22.711702,18:00,united states
+"6,747B",USD,economic_calendar_event,17/09/2026,Fed's Balance Sheet,,557274,medium,"6,741B",2026-10-08T04:10:22.749007,21:30,united states
+0.0%,USD,economic_calendar_event,18/09/2026,Industrial Production (MoM)  (Aug),0.3%,556425,medium,0.2%,2026-10-08T04:10:22.774596,14:15,united states
+1.42%,USD,economic_calendar_event,18/09/2026,Industrial Production (YoY)  (Aug),,556423,medium,1.13%,2026-10-08T04:10:22.824607,14:15,united states
+,USD,economic_calendar_event,18/09/2026,FOMC Member Bowman Speaks,,557262,medium,,2026-10-08T04:10:22.843944,14:30,united states
+-0.1%,USD,economic_calendar_event,18/09/2026,US Leading Index (MoM)  (Aug),0.1%,556426,medium,0.2%,2026-10-08T04:10:22.871364,15:00,united states
+452,USD,economic_calendar_event,18/09/2026,U.S. Baker Hughes Oil Rig Count,451,556907,medium,450,2026-10-08T04:10:22.906132,18:00,united states
+595,USD,economic_calendar_event,18/09/2026,U.S. Baker Hughes Total Rig Count,,556908,medium,591,2026-10-08T04:10:22.935379,18:00,united states
+135.9K,USD,economic_calendar_event,18/09/2026,CFTC Crude Oil speculative net positions,,557340,medium,136.6K,2026-10-08T04:10:22.968460,20:30,united states
+230.3K,USD,economic_calendar_event,18/09/2026,CFTC Gold speculative net positions,,557338,medium,232.0K,2026-10-08T04:10:23.003375,20:30,united states
+33.7K,USD,economic_calendar_event,18/09/2026,CFTC Nasdaq 100 speculative net positions,,557330,medium,20.9K,2026-10-08T04:10:23.057369,20:30,united states
+-100.5K,USD,economic_calendar_event,18/09/2026,CFTC S&P 500 speculative net positions,,557328,medium,-76.0K,2026-10-08T04:10:23.124980,20:30,united states
+20.00K,USD,economic_calendar_event,22/09/2026,ADP Employment Change Weekly,,557507,medium,16.30K,2026-10-08T04:10:23.168945,13:15,united states
+,USD,economic_calendar_event,22/09/2026,FOMC Member Williams Speaks,,557437,medium,,2026-10-08T04:10:23.205914,15:05,united states
+4.787%,USD,economic_calendar_event,22/09/2026,2-Year Note Auction,,557439,medium,4.315%,2026-10-08T04:10:23.233295,18:00,united states
+1.786M,USD,economic_calendar_event,22/09/2026,API Weekly Crude Oil Stock,-0.500M,557509,medium,7.140M,2026-10-08T04:10:23.269555,21:30,united states
+58.4,USD,economic_calendar_event,23/09/2026,S&P Global Composite PMI  (Sep),,556649,medium,56.0,2026-10-08T04:10:23.340780,14:45,united states
+,USD,economic_calendar_event,23/09/2026,Fed Vice Chair for Supervision Barr Speaks,,557656,medium,,2026-10-08T04:10:23.423385,15:05,united states
+2.266M,USD,economic_calendar_event,23/09/2026,Cushing Crude Oil Inventories,,557639,medium,-0.342M,2026-10-08T04:10:23.481375,15:30,united states
+5.033%,USD,economic_calendar_event,23/09/2026,5-Year Note Auction,,557447,medium,4.393%,2026-10-08T04:10:23.557537,18:00,united states
+,USD,economic_calendar_event,24/09/2026,FOMC Member Williams Speaks,,557596,medium,,2026-10-08T04:10:23.632355,09:10,united states
+1.403M,USD,economic_calendar_event,24/09/2026,Building Permits  (Aug),1.394M,557460,medium,1.433M,2026-10-08T04:10:23.673503,13:00,united states
+"1,719K",USD,economic_calendar_event,24/09/2026,Continuing Jobless Claims,"1,750K",557449,medium,"1,717K",2026-10-08T04:10:23.723450,13:30,united states
+-246.0B,USD,economic_calendar_event,24/09/2026,Current Account  (Q2),-258.0B,556729,medium,-212.6B,2026-10-08T04:10:23.776167,13:30,united states
+6.4%,USD,economic_calendar_event,24/09/2026,New Home Sales (MoM)  (Aug),,556733,medium,-4.3%,2026-10-08T04:10:23.806303,15:00,united states
+5.085%,USD,economic_calendar_event,24/09/2026,7-Year Note Auction,,557466,medium,4.512%,2026-10-08T04:10:23.843853,18:00,united states
+"6,748B",USD,economic_calendar_event,24/09/2026,Fed's Balance Sheet,,557657,medium,"6,747B",2026-10-08T04:10:23.896326,21:30,united states
+,USD,economic_calendar_event,25/09/2026,FOMC Member Williams Speaks,,557598,medium,,2026-10-08T04:10:23.987055,10:15,united states
+0.3%,USD,economic_calendar_event,25/09/2026,Core Durable Goods Orders (MoM)  (Aug),0.6%,556782,medium,0.7%,2026-10-08T04:10:24.019102,13:30,united states
+4.6%,USD,economic_calendar_event,25/09/2026,Michigan 1-Year Inflation Expectations  (Sep),4.6%,556786,medium,4.0%,2026-10-08T04:10:24.039950,15:00,united states
+3.4%,USD,economic_calendar_event,25/09/2026,Michigan 5-Year Inflation Expectations  (Sep),3.4%,556788,medium,3.3%,2026-10-08T04:10:24.069251,15:00,united states
+46.3,USD,economic_calendar_event,25/09/2026,Michigan Consumer Expectations  (Sep),45.8,556784,medium,51.5,2026-10-08T04:10:24.096926,15:00,united states
+48.1,USD,economic_calendar_event,25/09/2026,Michigan Consumer Sentiment  (Sep),47.8,556787,medium,51.7,2026-10-08T04:10:24.131227,15:00,united states
+5.0%,USD,economic_calendar_event,25/09/2026,Atlanta Fed GDPNow  (Q3),5.1%,556275,medium,5.1%,2026-10-08T04:10:24.163866,15:20,united states
+455,USD,economic_calendar_event,25/09/2026,U.S. Baker Hughes Oil Rig Count,453,557517,medium,452,2026-10-08T04:10:24.196754,18:00,united states
+599,USD,economic_calendar_event,25/09/2026,U.S. Baker Hughes Total Rig Count,,557518,medium,595,2026-10-08T04:10:24.223301,18:00,united states
+141.1K,USD,economic_calendar_event,25/09/2026,CFTC Crude Oil speculative net positions,,557731,medium,135.9K,2026-10-08T04:10:24.278259,20:30,united states
+225.9K,USD,economic_calendar_event,25/09/2026,CFTC Gold speculative net positions,,557729,medium,230.3K,2026-10-08T04:10:24.314497,20:30,united states
+56.1K,USD,economic_calendar_event,25/09/2026,CFTC Nasdaq 100 speculative net positions,,557721,medium,33.7K,2026-10-08T04:10:24.351656,20:30,united states
+-133.2K,USD,economic_calendar_event,25/09/2026,CFTC S&P 500 speculative net positions,,557719,medium,-100.5K,2026-10-08T04:10:24.391744,20:30,united states
+,USD,economic_calendar_event,28/09/2026,FOMC Member Bowman Speaks,,558233,medium,,2026-10-08T04:10:24.441662,13:15,united states
+2.5%,USD,economic_calendar_event,29/09/2026,S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Jul),2.2%,556951,medium,2.2%,2026-10-08T04:10:24.478552,14:00,united states
+0.0%,USD,economic_calendar_event,29/09/2026,S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Jul),,556950,medium,0.4%,2026-10-08T04:10:24.519653,14:00,united states
+,USD,economic_calendar_event,29/09/2026,FOMC Member Bowman Speaks,,558237,medium,,2026-10-08T04:10:24.604905,16:00,united states
+,USD,economic_calendar_event,29/09/2026,Fed Vice Chair for Supervision Barr Speaks,,558238,medium,,2026-10-08T04:10:24.638218,17:40,united states
+,USD,economic_calendar_event,29/09/2026,FOMC Member Williams Speaks,,558145,medium,,2026-10-08T04:10:24.665324,19:00,united states
+,USD,economic_calendar_event,29/09/2026,Fed Waller Speaks,,558239,medium,,2026-10-08T04:10:24.698594,20:00,united states
+1.019M,USD,economic_calendar_event,29/09/2026,API Weekly Crude Oil Stock,-1.900M,557897,medium,1.786M,2026-10-08T04:10:24.728185,21:30,united states
+3.30%,USD,economic_calendar_event,30/09/2026,Core PCE Prices  (Q2),3.60%,557119,medium,4.40%,2026-10-08T04:10:24.752068,13:30,united states
+6.1%,USD,economic_calendar_event,30/09/2026,GDP Price Index (QoQ)  (Q2),6.4%,557121,medium,3.6%,2026-10-08T04:10:24.798259,13:30,united states
+-132.60B,USD,economic_calendar_event,30/09/2026,Goods Trade Balance  (Aug),-116.30B,557124,medium,-118.80B,2026-10-08T04:10:24.833379,13:30,united states
+0.3%,USD,economic_calendar_event,30/09/2026,PCE price index (MoM)  (Aug),0.4%,557113,medium,0.1%,2026-10-08T04:10:24.870522,13:30,united states
+3.4%,USD,economic_calendar_event,30/09/2026,PCE Price index (YoY)  (Aug),3.7%,557111,medium,3.4%,2026-10-08T04:10:24.900625,13:30,united states
+0.9%,USD,economic_calendar_event,30/09/2026,Personal Spending (MoM)  (Aug),0.8%,557114,medium,0.1%,2026-10-08T04:10:24.917883,13:30,united states
+0.1%,USD,economic_calendar_event,30/09/2026,Retail Inventories Ex Auto  (Aug),,557122,medium,0.8%,2026-10-08T04:10:24.944778,13:30,united states
+3.7%,USD,economic_calendar_event,30/09/2026,Atlanta Fed GDPNow  (Q3),5.0%,556276,medium,5.0%,2026-10-08T04:10:24.973315,15:30,united states
+0.553M,USD,economic_calendar_event,30/09/2026,Cushing Crude Oil Inventories,,558106,medium,2.266M,2026-10-08T04:10:25.015967,15:30,united states
+,USD,economic_calendar_event,30/09/2026,FOMC Member Kashkari Speaks,,558149,medium,,2026-10-08T04:10:25.037794,23:00,united states
+"1,701K",USD,economic_calendar_event,01/10/2026,Continuing Jobless Claims,"1,730K",557900,medium,"1,712K",2026-10-08T04:10:25.066037,13:30,united states
+0.9%,USD,economic_calendar_event,01/10/2026,Construction Spending (MoM)  (Aug),0.0%,557230,medium,-0.1%,2026-10-08T04:10:25.108921,15:00,united states
+,USD,economic_calendar_event,01/10/2026,Fed Waller Speaks,,558241,medium,,2026-10-08T04:10:25.138271,15:00,united states
+52.7,USD,economic_calendar_event,01/10/2026,ISM Manufacturing Employment  (Sep),52.0,557226,medium,51.2,2026-10-08T04:10:25.169578,15:00,united states
+3.7%,USD,economic_calendar_event,01/10/2026,Atlanta Fed GDPNow  (Q3),3.7%,556277,medium,3.7%,2026-10-08T04:10:25.198031,16:00,united states
+,USD,economic_calendar_event,01/10/2026,FOMC Member Bowman Speaks,,558243,medium,,2026-10-08T04:10:25.234610,20:00,united states
+,USD,economic_calendar_event,01/10/2026,FOMC Member Williams Speaks,,558159,medium,,2026-10-08T04:10:25.272955,20:30,united states
+"6,743B",USD,economic_calendar_event,01/10/2026,Fed's Balance Sheet,,558139,medium,"6,748B",2026-10-08T04:10:25.297395,21:30,united states
+3.0%,USD,economic_calendar_event,02/10/2026,Average Hourly Earnings (YoY) (YoY)  (Sep),3.2%,557302,medium,3.1%,2026-10-08T04:10:25.326160,13:30,united states
+61.8%,USD,economic_calendar_event,02/10/2026,Participation Rate  (Sep),,557304,medium,61.6%,2026-10-08T04:10:25.358064,13:30,united states
+46K,USD,economic_calendar_event,02/10/2026,Private Nonfarm Payrolls  (Sep),85K,557299,medium,89K,2026-10-08T04:10:25.395916,13:30,united states
+7.6%,USD,economic_calendar_event,02/10/2026,U6 Unemployment Rate  (Sep),,557303,medium,7.7%,2026-10-08T04:10:25.425347,13:30,united states
+0.1%,USD,economic_calendar_event,02/10/2026,Factory Orders (MoM)  (Aug),0.1%,557311,medium,0.8%,2026-10-08T04:10:25.463487,15:00,united states
+456,USD,economic_calendar_event,02/10/2026,U.S. Baker Hughes Oil Rig Count,,557906,medium,455,2026-10-08T04:10:25.492455,18:00,united states
+598,USD,economic_calendar_event,02/10/2026,U.S. Baker Hughes Total Rig Count,,557907,medium,599,2026-10-08T04:10:25.521291,18:00,united states
+109.5K,USD,economic_calendar_event,02/10/2026,CFTC Crude Oil speculative net positions,,558222,medium,141.1K,2026-10-08T04:10:25.555794,20:30,united states
+218.6K,USD,economic_calendar_event,02/10/2026,CFTC Gold speculative net positions,,558220,medium,225.9K,2026-10-08T04:10:25.586918,20:30,united states
+51.2K,USD,economic_calendar_event,02/10/2026,CFTC Nasdaq 100 speculative net positions,,558212,medium,56.1K,2026-10-08T04:10:25.623501,20:30,united states
+-142.5K,USD,economic_calendar_event,02/10/2026,CFTC S&P 500 speculative net positions,,558210,medium,-133.2K,2026-10-08T04:10:25.689525,20:30,united states
+,USD,economic_calendar_event,04/10/2026,OPEC Meeting,,557956,medium,,2026-10-08T04:10:25.731035,11:00,united states
+58.4,USD,economic_calendar_event,05/10/2026,S&P Global Composite PMI  (Sep),58.4,557404,medium,58.4,2026-10-08T04:10:25.870496,14:45,united states
+50.1,USD,economic_calendar_event,05/10/2026,ISM Non-Manufacturing Employment  (Sep),48.8,557409,medium,47.8,2026-10-08T04:10:25.917219,15:00,united states
+22.50K,USD,economic_calendar_event,06/10/2026,ADP Employment Change Weekly,,558747,medium,20.00K,2026-10-08T04:10:25.946156,13:14,united states
+23.80K,USD,economic_calendar_event,06/10/2026,ADP Employment Change Weekly,,558316,medium,22.50K,2026-10-08T04:10:25.975343,13:15,united states
+315.20B,USD,economic_calendar_event,06/10/2026,Exports  (Aug),,558317,medium,310.70B,2026-10-08T04:10:25.997693,13:30,united states
+420.80B,USD,economic_calendar_event,06/10/2026,Imports  (Aug),,558318,medium,403.60B,2026-10-08T04:10:26.049027,13:30,united states
+-105.60B,USD,economic_calendar_event,06/10/2026,Trade Balance  (Aug),-100.80B,557491,medium,-92.80B,2026-10-08T04:10:26.092830,13:30,united states
+,USD,economic_calendar_event,06/10/2026,FOMC Member Williams Speaks,,558691,medium,,2026-10-08T04:10:26.122647,14:05,united states
+,USD,economic_calendar_event,06/10/2026,FOMC Member Bowman Speaks,,558614,medium,,2026-10-08T04:10:26.160096,15:45,united states
+3.7%,USD,economic_calendar_event,06/10/2026,Atlanta Fed GDPNow  (Q3),3.7%,556458,medium,3.7%,2026-10-08T04:10:26.199592,16:00,united states
+,USD,economic_calendar_event,06/10/2026,EIA Short-Term Energy Outlook,,558511,medium,,2026-10-08T04:10:26.229529,17:00,united states
+4.932%,USD,economic_calendar_event,06/10/2026,3-Year Note Auction,,558321,medium,4.474%,2026-10-08T04:10:26.265296,18:00,united states
+-2.090M,USD,economic_calendar_event,06/10/2026,API Weekly Crude Oil Stock,,558508,medium,1.019M,2026-10-08T04:10:26.312308,21:30,united states
+0.444M,USD,economic_calendar_event,07/10/2026,Cushing Crude Oil Inventories,,558552,medium,0.553M,2026-10-08T04:10:26.348070,15:30,united states
+3.9%,USD,economic_calendar_event,07/10/2026,NY Fed 1-Year Consumer Inflation Expectations  (Sep),3.6%,558343,medium,3.6%,2026-10-08T04:10:26.398225,16:00,united states
+8.28B,USD,economic_calendar_event,07/10/2026,Consumer Credit  (Aug),14.50B,557568,medium,17.74B,2026-10-08T04:10:26.430200,20:00,united states
+,,economic_calendar_event,07/09/2026,United States - Labor Day,,98,,,2026-10-08T04:10:26.468330,All Day,united states

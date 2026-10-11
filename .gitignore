@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+# data (regenerate with main.py)
+data/raw/*
+data/processed/*
+data/database/*
+!data/raw/.gitkeep
+!data/raw/apify_investing_calendar_combined_raw.csv
+!data/processed/.gitkeep
+!data/processed/events.csv
+!data/database/.gitkeep
+*.joblib
+*.db
