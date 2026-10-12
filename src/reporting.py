@@ -92,14 +92,20 @@ metric that matters for a ranking/selection use-case. R2 is typically near zero 
 - Sentiment uses a keyword lexicon; upgrade to a finance-tuned classifier for production.
 - Top-k selection from many permutations carries multiple-testing risk; confirm on a longer, untouched hold-out.
 """)
-    path.write_text("\n".join(txt))
+    path.write_text("\n".join(txt), encoding="utf-8")
     return path
 
 
 def write_macro_outlook(events: pd.DataFrame, news: pd.DataFrame, daily: pd.DataFrame, demo: bool,
-                        path: Path | None = None, proxy: bool = False) -> Path:
+                        path: Path | None = None, proxy: bool = False, as_of: pd.Timestamp | None = None,
+                        narrative: dict | None = None) -> Path:
+    """Write reports/macro_outlook.md.
+
+    `as_of` pins the report date (use the data's last date for reproducible output; defaults to today).
+    `narrative` = {"text", "meta", "unverified"} adds the LLM-written section (see src/llm_summary.py).
+    """
     path = Path(path or config.REPORTS_DIR / "macro_outlook.md")
-    today = pd.Timestamp.now().normalize()
+    today = pd.Timestamp(as_of if as_of is not None else pd.Timestamp.now()).normalize()
     d = daily.set_index("date")
     past = d.loc[:today]
     ev = events.copy()
@@ -109,6 +115,7 @@ def write_macro_outlook(events: pd.DataFrame, news: pd.DataFrame, daily: pd.Data
     last = (rel.sort_values("event_time_utc").groupby("event_type").tail(1).set_index("event_type")
             [["event_date", "event_name", "actual", "forecast", "surprise"]])
     last["event_date"] = last["event_date"].dt.strftime("%Y-%m-%d")
+    last["event_name"] = last["event_name"].str.replace(r"\s+", " ", regex=True).str.strip()
 
     def lvl(col):
         now, prev = past[col].iloc[-1], past[col].iloc[-31] if len(past) > 31 else past[col].iloc[0]
@@ -123,7 +130,9 @@ def write_macro_outlook(events: pd.DataFrame, news: pd.DataFrame, daily: pd.Data
                 else f"- {r.event_date:%a %b %d}: {r.event_name}" for r in up.sort_values("event_time_utc").itertuples()]
 
     sc = score_news(news)
-    recent = sc[sc["date"] >= today - pd.Timedelta(days=14)].sort_values("score", ascending=False).head(5)
+    sc["score"] = pd.to_numeric(sc["score"], errors="coerce").fillna(0.0)
+    recent = (sc[sc["date"] >= today - pd.Timedelta(days=14)]
+              .sort_values(["score", "published_at", "title"], ascending=[False, False, True]).head(5))
     heads = [f"- {r.title} ({r.source})" for r in recent.itertuples()]
 
     surprise_bias = past["viz_surprise_ewm"].iloc[-1]
@@ -137,9 +146,25 @@ def write_macro_outlook(events: pd.DataFrame, news: pd.DataFrame, daily: pd.Data
         txt.append(DEMO_BANNER)
     elif proxy:
         txt.append("> **DATA NOTE.** This outlook uses the collected calendar/news exports. Trading performance in the companion evaluation report uses synthetic proxy P&L, not actual trades. Calendar coverage is incomplete and should not be interpreted as a complete 180-day macro history.\n\n")
-    txt.append(f"""## Headline view
-News flow is **{tone}** on policy (tone index {hd:+.2f}, {hd_chg:+.2f} over 30d) and **{risk}** on markets
+
+    if narrative:
+        m = narrative.get("meta", {})
+        txt.append("## Outlook (LLM-written)\n")
+        txt.append(f"_Written by {m.get('generated_by', 'an LLM')} (model: {m.get('model', 'n/a')}, {m.get('generated_on', '')}) "
+                   "from the structured context in `reports/llm_context.json`; it may use no other facts._\n")
+        txt.append(narrative["text"].strip() + "\n")
+        if narrative.get("unverified"):
+            txt.append("_Automated check - figures in the text not found verbatim in the context "
+                       f"(derived or rounded values show up here; verify): {', '.join(narrative['unverified'])}._\n")
+        txt.append("## Signal snapshot (rule-based)\n")
+    else:
+        txt.append("## Headline view\n")
+    txt.append(f"""News flow is **{tone}** on policy (tone index {hd:+.2f}, {hd_chg:+.2f} over 30d) and **{risk}** on markets
 (sentiment {rs:+.2f}, {rs_chg:+.2f} over 30d). {data_line}
+
+![Macro sentiment and data surprises over time](figures/macro_sentiment_timeline.png)
+
+![Macro surprise matrix (event type by week)](figures/macro_surprise_matrix.png)
 
 ## Latest releases
 {df_to_md(last, 2)}
@@ -151,12 +176,14 @@ News flow is **{tone}** on policy (tone index {hd:+.2f}, {hd_chg:+.2f} over 30d)
 {chr(10).join(heads) if heads else '- No recent articles.'}
 
 ## Implications for the strategy book
-- Event days (CPI / FOMC / jobs) historically changed which permutations work; the model includes scheduled-event flags
-  and lagged surprise features so allocation tilts ahead of releases.
-- A {tone} tone with {risk} sentiment is fed to the model as lagged features, not hard-coded rules.
-
-## Analyst commentary (edit before sending)
-_Add 3-5 sentences: your read on inflation trend, labour market, Fed path, and the key risk to this view._
 """)
-    path.write_text("\n".join(txt))
+    if proxy or demo:
+        txt.append("- Strategy P&L in this run is synthetic, so no claim is made about which permutations the macro backdrop favours.\n"
+                   "- The pipeline feeds scheduled-event flags, lagged surprise z-scores and lagged news tone to the model; "
+                   "with real trade logs the evaluation report shows whether they add any out-of-sample value.\n")
+    else:
+        txt.append("- Event days (CPI / FOMC / jobs) can change which permutations work; the model includes scheduled-event flags\n"
+                   "  and lagged surprise features so allocation tilts ahead of releases.\n"
+                   f"- A {tone} tone with {risk} sentiment is fed to the model as lagged features, not hard-coded rules.\n")
+    path.write_text("\n".join(txt), encoding="utf-8")
     return path

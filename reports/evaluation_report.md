@@ -1,13 +1,13 @@
 # Evaluation Report - Walk-Forward Strategy Permutation Model
 
-> **PROXY EVALUATION — SYNTHETIC P&L, NOT REAL TRADES.** Calendar events and news are loaded from the collected source exports, but every trading outcome is randomly generated with zero-mean noise and no planted predictive relationship. Sharpe, Sortino, drawdown, forecast scores and rankings are software-test outputs only; they are not evidence of profitability.
+> **PROXY EVALUATION â€” SYNTHETIC P&L, NOT REAL TRADES.** Calendar events and news are loaded from the collected source exports, but every trading outcome is randomly generated with zero-mean noise and no planted predictive relationship. Sharpe, Sortino, drawdown, forecast scores and rankings are software-test outputs only; they are not evidence of profitability.
 
 
 ## 1. Setup
-- Model: `hgb`  |  Features: 41  |  Permutations: 27  |  Trades: 3483
+- Model: `hgb`  |  Features: 41  |  Permutations: 27  |  Trades: 3510
 - Target: next-day P&L (% of allocated capital) of each (day, permutation) row
 - Validation: expanding-window walk-forward, min train 40 days, test block 5 days,
-  embargo 1 day, **18 folds**, out-of-sample span 2026-06-09 -> 2026-10-09 (89 days)
+  embargo 1 day, **18 folds**, out-of-sample span 2026-06-08 -> 2026-10-09 (90 days)
 - Selection rule: each day hold the top-5 permutations by predicted P&L, equal weight
 - Leakage controls: realised data lagged 1 day; only scheduled calendar info unlagged; model never refit on test rows
 - No transaction costs, slippage or capacity limits are modelled.
@@ -15,10 +15,10 @@
 ## 2. Strategy performance (out-of-sample)
 |  | n_days | total_pnl_% | mean_daily_% | ann_vol_% | sharpe | sortino | max_drawdown | hit_rate |
 |---|---|---|---|---|---|---|---|---|
-| model_topk | 89.000 | 0.872 | 0.010 | 3.606 | 0.684 | 0.946 | -0.015 | 0.483 |
-| trailing_topk | 89.000 | -1.407 | -0.016 | 3.966 | -1.004 | -1.414 | -0.038 | 0.438 |
-| equal_weight | 89.000 | 0.503 | 0.006 | 1.883 | 0.757 | 1.088 | -0.007 | 0.483 |
-| model_bottomk | 89.000 | 0.024 | 0.000 | 4.478 | 0.015 | 0.023 | -0.025 | 0.449 |
+| model_topk | 90.000 | -0.070 | -0.001 | 4.204 | -0.046 | -0.064 | -0.022 | 0.511 |
+| trailing_topk | 90.000 | -1.415 | -0.016 | 3.943 | -1.005 | -1.414 | -0.038 | 0.433 |
+| equal_weight | 90.000 | 0.381 | 0.004 | 1.885 | 0.565 | 0.808 | -0.007 | 0.478 |
+| model_bottomk | 90.000 | 1.516 | 0.017 | 4.617 | 0.919 | 1.352 | -0.017 | 0.522 |
 
 Sharpe / Sortino annualised with sqrt(252); max drawdown is relative to peak equity (start = 100).
 **Any apparent ranking/performance differences are artifacts of synthetic outcomes and must not be interpreted as evidence of predictive skill.**
@@ -28,14 +28,14 @@ Sharpe / Sortino annualised with sqrt(252); max drawdown is relative to peak equ
 ## 3. Forecast quality (out-of-sample)
 |  | value |
 |---|---|
-| n_predictions | 2403.0000 |
-| rmse | 0.6158 |
-| mae | 0.4930 |
-| r2 | -0.0435 |
-| mean_rank_ic | 0.0107 |
-| ic_ir | 0.0578 |
-| ic_positive_days | 0.5056 |
-| direction_accuracy | 0.5031 |
+| n_predictions | 2430.0000 |
+| rmse | 0.6143 |
+| mae | 0.4896 |
+| r2 | -0.0404 |
+| mean_rank_ic | -0.0005 |
+| ic_ir | -0.0028 |
+| ic_positive_days | 0.5222 |
+| direction_accuracy | 0.5037 |
 
 `mean_rank_ic` is the average daily cross-sectional Spearman correlation between predicted and realised P&L; it is the
 metric that matters for a ranking/selection use-case. R2 is typically near zero for noisy P&L and should not be over-read.
@@ -43,25 +43,25 @@ metric that matters for a ranking/selection use-case. R2 is typically near zero 
 ## 4. Feature importance (permutation, last 4 folds)
 |  | importance | std |
 |---|---|---|
-| ret_lag1 | 0.01187 | 0.00155 |
-| vol_pnl_5 | 0.01043 | 0.00199 |
-| vol_pnl_20 | 0.00846 | 0.00111 |
-| mean_pnl_5 | 0.00829 | 0.00163 |
-| hawk_dove_ewm | 0.00805 | 0.00132 |
-| day_of_month | 0.00802 | 0.00211 |
-| mean_pnl_20 | 0.00601 | 0.00158 |
-| mkt_mean_pnl_5 | 0.00480 | 0.00107 |
-| dow | 0.00431 | 0.00072 |
-| stop_loss | 0.00396 | 0.00130 |
+| vol_pnl_5 | 0.01350 | 0.00353 |
+| ret_lag1 | 0.01146 | 0.00184 |
+| vol_pnl_20 | 0.01139 | 0.00108 |
+| mean_pnl_5 | 0.00852 | 0.00235 |
+| day_of_month | 0.00733 | 0.00182 |
+| mean_pnl_20 | 0.00608 | 0.00103 |
+| sent_change_5d | 0.00489 | 0.00091 |
+| mkt_mean_pnl_5 | 0.00460 | 0.00086 |
+| dow_cos | 0.00459 | 0.00113 |
+| hawk_dove_ewm | 0.00314 | 0.00068 |
 
 ## 5. Synthetic proxy rankings (not trading recommendations)
 | permutation_id | date | lookback | stop_loss | take_profit | pred_pnl_% |
 |---|---|---|---|---|---|
-| L20_SL1.0_TP3.0 | 2026-10-12 00:00:00 | 20 | 1.000 | 3.000 | 0.054 |
-| L20_SL2.0_TP1.0 | 2026-10-12 00:00:00 | 20 | 2.000 | 1.000 | 0.044 |
-| L50_SL2.0_TP1.0 | 2026-10-12 00:00:00 | 50 | 2.000 | 1.000 | 0.040 |
-| L20_SL1.0_TP2.0 | 2026-10-12 00:00:00 | 20 | 1.000 | 2.000 | 0.036 |
-| L50_SL1.0_TP3.0 | 2026-10-12 00:00:00 | 50 | 1.000 | 3.000 | 0.021 |
+| L20_SL1.0_TP2.0 | 2026-10-12 00:00:00 | 20 | 1.000 | 2.000 | 0.081 |
+| L50_SL0.5_TP1.0 | 2026-10-12 00:00:00 | 50 | 0.500 | 1.000 | 0.069 |
+| L50_SL1.0_TP2.0 | 2026-10-12 00:00:00 | 50 | 1.000 | 2.000 | 0.054 |
+| L20_SL1.0_TP3.0 | 2026-10-12 00:00:00 | 20 | 1.000 | 3.000 | 0.047 |
+| L20_SL0.5_TP3.0 | 2026-10-12 00:00:00 | 20 | 0.500 | 3.000 | 0.040 |
 
 ## 6. Macro visuals
 ![sentiment](figures/macro_sentiment_timeline.png)

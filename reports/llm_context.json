@@ -1,0 +1,410 @@
+{
+ "as_of": "2026-10-09",
+ "proxy_pnl": true,
+ "coverage": {
+  "calendar_start": "2026-09-09",
+  "calendar_end": "2026-10-07",
+  "n_calendar_events": 57,
+  "n_articles": 547
+ },
+ "latest_releases": [
+  {
+   "date": "2026-09-10",
+   "type": "GDP",
+   "name": "Atlanta Fed GDPNow (Q3)",
+   "actual": 4.4,
+   "forecast": 4.7,
+   "previous": 4.7,
+   "surprise": -0.3
+  },
+  {
+   "date": "2026-09-11",
+   "type": "CPI",
+   "name": "CPI (MoM) (Aug)",
+   "actual": 0.4,
+   "forecast": 0.4,
+   "previous": 0.1,
+   "surprise": 0.0
+  },
+  {
+   "date": "2026-09-11",
+   "type": "CPI",
+   "name": "CPI (YoY) (Aug)",
+   "actual": 3.4,
+   "forecast": 3.4,
+   "previous": 3.4,
+   "surprise": 0.0
+  },
+  {
+   "date": "2026-09-11",
+   "type": "CPI",
+   "name": "Core CPI (MoM) (Aug)",
+   "actual": 0.3,
+   "forecast": 0.2,
+   "previous": 0.2,
+   "surprise": 0.1
+  },
+  {
+   "date": "2026-09-11",
+   "type": "CPI",
+   "name": "Core CPI (YoY) (Aug)",
+   "actual": 2.4,
+   "forecast": 2.4,
+   "previous": 2.5,
+   "surprise": 0.0
+  },
+  {
+   "date": "2026-09-16",
+   "type": "GDP",
+   "name": "Atlanta Fed GDPNow (Q3)",
+   "actual": 5.1,
+   "forecast": 4.4,
+   "previous": 4.4,
+   "surprise": 0.7
+  },
+  {
+   "date": "2026-09-16",
+   "type": "FOMC",
+   "name": "Fed Interest Rate Decision",
+   "actual": 4.0,
+   "forecast": 4.0,
+   "previous": 3.75,
+   "surprise": 0.0
+  },
+  {
+   "date": "2026-09-17",
+   "type": "GDP",
+   "name": "Atlanta Fed GDPNow (Q3)",
+   "actual": 5.1,
+   "forecast": 5.1,
+   "previous": 5.1,
+   "surprise": 0.0
+  },
+  {
+   "date": "2026-09-25",
+   "type": "GDP",
+   "name": "Atlanta Fed GDPNow (Q3)",
+   "actual": 5.0,
+   "forecast": 5.1,
+   "previous": 5.1,
+   "surprise": -0.1
+  },
+  {
+   "date": "2026-09-30",
+   "type": "PCE",
+   "name": "Core PCE Price Index (MoM) (Aug)",
+   "actual": 0.2,
+   "forecast": 0.3,
+   "previous": 0.1,
+   "surprise": -0.1
+  },
+  {
+   "date": "2026-09-30",
+   "type": "PCE",
+   "name": "Core PCE Price Index (YoY) (Aug)",
+   "actual": 3.0,
+   "forecast": 3.3,
+   "previous": 3.0,
+   "surprise": -0.3
+  },
+  {
+   "date": "2026-09-30",
+   "type": "PCE",
+   "name": "Core PCE Prices (Q2)",
+   "actual": 3.3,
+   "forecast": 3.6,
+   "previous": 4.4,
+   "surprise": -0.3
+  },
+  {
+   "date": "2026-09-30",
+   "type": "GDP",
+   "name": "GDP (QoQ) (Q2)",
+   "actual": 2.2,
+   "forecast": 1.5,
+   "previous": 2.1,
+   "surprise": 0.7
+  },
+  {
+   "date": "2026-09-30",
+   "type": "GDP",
+   "name": "GDP Price Index (QoQ) (Q2)",
+   "actual": 6.1,
+   "forecast": 6.4,
+   "previous": 3.6,
+   "surprise": -0.3
+  },
+  {
+   "date": "2026-09-30",
+   "type": "PCE",
+   "name": "PCE Price index (YoY) (Aug)",
+   "actual": 3.4,
+   "forecast": 3.7,
+   "previous": 3.4,
+   "surprise": -0.3
+  },
+  {
+   "date": "2026-09-30",
+   "type": "PCE",
+   "name": "PCE price index (MoM) (Aug)",
+   "actual": 0.3,
+   "forecast": 0.4,
+   "previous": 0.1,
+   "surprise": -0.1
+  },
+  {
+   "date": "2026-09-30",
+   "type": "GDP",
+   "name": "Atlanta Fed GDPNow (Q3)",
+   "actual": 3.7,
+   "forecast": 5.0,
+   "previous": 5.0,
+   "surprise": -1.3
+  },
+  {
+   "date": "2026-10-01",
+   "type": "EMPLOYMENT",
+   "name": "Continuing Jobless Claims",
+   "actual": 1701000.0,
+   "forecast": 1730000.0,
+   "previous": 1712000.0,
+   "surprise": -29000.0
+  },
+  {
+   "date": "2026-10-01",
+   "type": "EMPLOYMENT",
+   "name": "Initial Jobless Claims",
+   "actual": 197000.0,
+   "forecast": 201000.0,
+   "previous": 198000.0,
+   "surprise": -4000.0
+  },
+  {
+   "date": "2026-10-01",
+   "type": "GDP",
+   "name": "Atlanta Fed GDPNow (Q3)",
+   "actual": 3.7,
+   "forecast": 3.7,
+   "previous": 3.7,
+   "surprise": 0.0
+  },
+  {
+   "date": "2026-10-02",
+   "type": "EMPLOYMENT",
+   "name": "Average Hourly Earnings (MoM) (Sep)",
+   "actual": 0.1,
+   "forecast": 0.3,
+   "previous": 0.3,
+   "surprise": -0.2
+  },
+  {
+   "date": "2026-10-02",
+   "type": "EMPLOYMENT",
+   "name": "Average Hourly Earnings (YoY) (YoY) (Sep)",
+   "actual": 3.0,
+   "forecast": 3.2,
+   "previous": 3.1,
+   "surprise": -0.2
+  },
+  {
+   "date": "2026-10-02",
+   "type": "EMPLOYMENT",
+   "name": "Nonfarm Payrolls (Sep)",
+   "actual": 29000.0,
+   "forecast": 89000.0,
+   "previous": 133000.0,
+   "surprise": -60000.0
+  },
+  {
+   "date": "2026-10-02",
+   "type": "EMPLOYMENT",
+   "name": "Private Nonfarm Payrolls (Sep)",
+   "actual": 46000.0,
+   "forecast": 85000.0,
+   "previous": 89000.0,
+   "surprise": -39000.0
+  },
+  {
+   "date": "2026-10-02",
+   "type": "EMPLOYMENT",
+   "name": "U6 Unemployment Rate (Sep)",
+   "actual": 7.6,
+   "forecast": null,
+   "previous": 7.7,
+   "surprise": null
+  },
+  {
+   "date": "2026-10-02",
+   "type": "EMPLOYMENT",
+   "name": "Unemployment Rate (Sep)",
+   "actual": 4.2,
+   "forecast": 4.1,
+   "previous": 4.1,
+   "surprise": 0.1
+  },
+  {
+   "date": "2026-10-06",
+   "type": "EMPLOYMENT",
+   "name": "ADP Employment Change Weekly",
+   "actual": 22500.0,
+   "forecast": null,
+   "previous": 20000.0,
+   "surprise": null
+  },
+  {
+   "date": "2026-10-06",
+   "type": "EMPLOYMENT",
+   "name": "ADP Employment Change Weekly",
+   "actual": 23800.0,
+   "forecast": null,
+   "previous": 22500.0,
+   "surprise": null
+  },
+  {
+   "date": "2026-10-06",
+   "type": "GDP",
+   "name": "Atlanta Fed GDPNow (Q3)",
+   "actual": 3.7,
+   "forecast": 3.7,
+   "previous": 3.7,
+   "surprise": 0.0
+  }
+ ],
+ "upcoming_14d": [],
+ "sentiment_indices": {
+  "hawkish_dovish_tone (+hawkish, range -1..1)": {
+   "now": 0.2923,
+   "change_30d": -0.1253
+  },
+  "risk_sentiment (+risk-on, range -1..1)": {
+   "now": 0.2897,
+   "change_30d": -0.1667
+  },
+  "data_surprise_ewm_zscore (+hotter/stronger than forecast)": {
+   "now": -0.4517,
+   "change_30d": -0.4517
+  }
+ },
+ "recent_headlines": [
+  {
+   "published": "2026-10-02",
+   "outlet": "cnbc.com",
+   "title": "Jobs report September 2026:",
+   "snippet": "The U.S. economy created far fewer jobs than expected in September, pointing to a surprising soft spot in the labor market and broader economy. Nonfarm payrolls rose a seasonally adjusted 29,000 for the month while the unemployment rate inc"
+  },
+  {
+   "published": "2026-10-05",
+   "outlet": "advisorperspectives.com",
+   "title": "Employment Report: 29K Jobs Added in September, Worse Than Expected - dshort - Advisor Perspectives",
+   "snippet": "> Both nonfarm payroll employment (+29,000) and the unemployment rate (4.2 percent) changed little in September, the U.S. Bureau of Labor Statistics reported today. Employment in all major industries changed little over the month. > > House"
+  },
+  {
+   "published": "2026-10-02",
+   "outlet": "morningstar.com",
+   "title": "September US Jobs Report: 29,000 Rise in Payrolls, Softer Than Expected | Morningstar",
+   "snippet": "Nonfarm payroll employment had been forecast to show an increase of 95,000, down from an increase of 162,000 initially reported in August, according to FactSet. That August gain has since been revised down to 133,000. Meanwhile, the unemplo"
+  },
+  {
+   "published": "2026-10-09",
+   "outlet": "investinglive.com",
+   "title": "S&P 500 jumps as oil, Treasury yields and US dollar ease after Trump's de-escalation",
+   "snippet": "Markets reacted by unwinding the escalation premium, with oil prices, Treasury yields and the US dollar all falling after Trump's post, improving the risk sentiment and giving the S&P 500 a boost. [...] Looking ahead, Iranian Foreign Minist"
+  },
+  {
+   "published": "2026-10-02",
+   "outlet": "usatoday.com",
+   "title": "September jobs report shows slowdown in hiring, rise in unemployment",
+   "snippet": "Average hourly earnings for employees on private, nonfarm payrolls — calculated as a mean — rose by 5 cents to $37.81 in September, the department said. Over the year, they increased 3%. The department's September inflation report, due out "
+  },
+  {
+   "published": "2026-10-09",
+   "outlet": "finance.yahoo.com",
+   "title": "Stocktwits Weekly Spread: What Shaped Treasury Yields And The Dollar This Week",
+   "snippet": "+0.19% The U.S. dollar index wrapped its fourth consecutive week of gains—its longest rally since early 2025. Benchmark 10-year Treasury yields slipped 4 basis points to 5.25% at week's end, while 30-year yields reached 5.60%. The yield cur"
+  },
+  {
+   "published": "2026-10-02",
+   "outlet": "finance.yahoo.com",
+   "title": "U.S. September 2026 jobs report: payrolls miss forecasts badly",
+   "snippet": "Quartz # U.S. September 2026 jobs report: payrolls miss forecasts badly Quartz · PATRICK T. FALLON / Getty Images Cris Tolomia 2 min read The U.S. economy added 29,000 nonfarm payroll jobs in September, the Bureau of Labor Statistics report"
+  },
+  {
+   "published": "2026-09-26",
+   "outlet": "seekingalpha.com",
+   "title": "Treasury Yields Surge As Stocks Fall And Dollar Rises",
+   "snippet": "Here are my latest SA premium articles for you to read:The S&P 500 fell by 75 bps as the 2-year Treasury yield rose 14 bps to 4.89% following a strong S&P."
+  },
+  {
+   "published": "2026-10-02",
+   "outlet": "bloomberg.com",
+   "title": "US Job Growth Misses Estimates, Unemployment Rate Edges Higher in September - Bloomberg",
+   "snippet": "Nonfarm payrolls increased 29,000 last month after a downward revision to the prior two months, according to Bureau of Labor Statistics data out Friday. That missed all estimates in a Bloomberg survey of economists. The unemployment rate ro"
+  },
+  {
+   "published": "2026-10-05",
+   "outlet": "reuters.com",
+   "title": "Stocks upbeat, dollar wobbles as Fed hike bets recede | Reuters",
+   "snippet": "A recent selloff in global bonds ‌hit ⁠pause on Monday, with benchmark 10-year US Treasury yields retreating slightly to 5.2643% while two-year yields stood at 4.8143%. While yields fell slightly in the wake of the US jobs data, they closed"
+  },
+  {
+   "published": "2026-10-07",
+   "outlet": "eurasiabusinessnews.com",
+   "title": "Stock Market Today: Treasury Yields Retreat After Strong Auction, Dow Slips – Eurasia Business News",
+   "snippet": "By William Collins, consultant in stock markets – Eurasia Business News, October 7, 2026. Article no 3200 U.S. stocks fell on Wednesday, October 7, retreating from Tuesday’s record highs as Treasury-market volatility unsettled investors. A "
+  },
+  {
+   "published": "2026-09-26",
+   "outlet": "reuters.com",
+   "title": "As 5% Treasury yields lose shock value, investors start worrying about 6%",
+   "snippet": "For years, 5% on the benchmark US 10-year Treasury yield was viewed as the point at ​which global financial markets would start hitting turbulence."
+  },
+  {
+   "published": "2026-10-01",
+   "outlet": "foxbusiness.com",
+   "title": "September jobs report: US economy added jobs at a slower pace amid uncertainty | Fox Business",
+   "snippet": "The Bureau of Labor Statistics on Friday reported that employers added 29,000 jobs in September. That figure was below the 90,000 estimate of economists polled by LSEG. The unemployment rate ticked higher to 4.2%, which was above economists"
+  },
+  {
+   "published": "2026-09-30",
+   "outlet": "deloitte.com",
+   "title": "US economic forecast | Deloitte Insights",
+   "snippet": "As the recession begins to take hold, we assume the US Federal Reserve embarks on a series of interest rate cuts. This helps stabilize the economy and equity markets. However, the subsequent recovery is assumed to be much slower than after "
+  },
+  {
+   "published": "2026-10-03",
+   "outlet": "reuters.com",
+   "title": "US job growth undershoots expectations in September, but labor market remains stable",
+   "snippet": "US job growth slowed more than expected in September and the nonfarm payrolls count for the prior two months was revised sharply lower, almost taking"
+  },
+  {
+   "published": "2026-10-05",
+   "outlet": "kfgo.com",
+   "title": "Morning Bid: The euro has a France problem | The Mighty 790 KFGO | KFGO",
+   "snippet": "The Mighty 790 KFGO | KFGO facebook twitter # Morning Bid: The euro has a France problem A look at the day ahead in European and global markets from Rae Wee The dollar charged higher on Monday, drawing support from still-lofty Treasury yiel"
+  },
+  {
+   "published": "2026-10-01",
+   "outlet": "conference-board.org",
+   "title": "US Leading Indicators",
+   "snippet": "The Conference Board Leading Economic Index® (LEI) for the US decreased by 0.1% in August 2026 to 99.5 (2016=100), after an increase of 0.2% in July. As a result, the LEI’s six-month growth was –0.1% between February and August 2026, a much"
+  },
+  {
+   "published": "2026-10-03",
+   "outlet": "reuters.com",
+   "title": "US job growth expected to slow in September; unemployment rate likely steady",
+   "snippet": "US job growth likely slowed in September and the unemployment rate is forecast to have been 4.1% for a third straight month, suggesting the labor market"
+  },
+  {
+   "published": "2026-10-03",
+   "outlet": "reuters.com",
+   "title": "Fed policymakers lean against October rate hike",
+   "snippet": "Two of the Federal ​Reserve's top policymakers this week staked out an unusually clear case for taking in more data before deciding about another"
+  },
+  {
+   "published": "2026-10-03",
+   "outlet": "mckinsey.com",
+   "title": "Economic conditions outlook, September 2026",
+   "snippet": "In this regularly updated global economic outlook report, McKinsey experts examine some of the biggest challenges facing markets in 2026 and beyond."
+  }
+ ]
+}

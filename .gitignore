@@ -16,6 +16,10 @@ data/database/*
 !data/raw/apify_investing_calendar_combined_raw.csv
 !data/processed/.gitkeep
 !data/processed/events.csv
+!data/processed/news_tavily.csv
+!data/processed/news_exa.csv
 !data/database/.gitkeep
 *.joblib
 *.db
+# local-only scratch
+.DS_Store

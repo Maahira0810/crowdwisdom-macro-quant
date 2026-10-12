@@ -28,7 +28,7 @@ def save_raw_json(obj, prefix: str, raw_dir: Path | None = None) -> Path:
     raw_dir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     path = raw_dir / f"{prefix}_{stamp}.json"
-    path.write_text(json.dumps(obj, indent=2, default=str))
+    path.write_text(json.dumps(obj, indent=2, default=str), encoding="utf-8")
     return path
 
 

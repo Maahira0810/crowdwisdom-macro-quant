@@ -75,6 +75,15 @@ def load_inputs(demo: bool = False, refresh: bool = False, seed: int = 7):
     return _load_events(ev_path), _load_news(news_paths), _load_trades(config.TRADE_LOGS_PATH), "live"
 
 
+def data_anchor(events: pd.DataFrame, news: pd.DataFrame) -> pd.Timestamp:
+    """Reference 'as of' date derived from the collected data (latest article, else latest released event)."""
+    if len(news) and news["published_at"].notna().any():
+        ts = news["published_at"].max().tz_convert(config.TZ_EST)
+    else:
+        ts = events.loc[events["actual"].notna(), "event_time_est"].max()
+    return pd.Timestamp(ts).tz_localize(None).normalize()
+
+
 def load_proxy_inputs(seed: int = 19):
     """Load real collected calendar/news files and pair them with synthetic P&L.
 
@@ -91,7 +100,8 @@ def load_proxy_inputs(seed: int = 19):
     events = _load_events(ev_path)
     news = _load_news(news_paths)
     from src.synthetic import make_proxy_trades
-    trades = make_proxy_trades(days=config.LOOKBACK_DAYS, seed=seed)
+    # Anchor to the data, not to the wall clock, so a rerun on any day reproduces the same numbers.
+    trades = make_proxy_trades(days=config.LOOKBACK_DAYS, seed=seed, today=data_anchor(events, news))
     proxy_dir = config.PROCESSED_DIR / "proxy"
     proxy_dir.mkdir(parents=True, exist_ok=True)
     trades.to_csv(proxy_dir / "trade_logs_proxy_synthetic.csv", index=False)

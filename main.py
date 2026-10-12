@@ -4,13 +4,19 @@
   python main.py --proxy                 # collected calendar/news + synthetic P&L (not a real backtest)
   python main.py                         # live: uses data/processed/*.csv + data/raw/trade_logs.csv
   python main.py --refresh               # re-scrape Apify / Tavily / Exa first
+  python main.py --proxy --llm           # also (re)write the macro outlook with an LLM (needs an API key in .env)
+
+Every run also writes self-contained HTML versions of both reports next to the markdown ones.
 """
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 
-from src import config, pipeline, reporting
+import pandas as pd
+
+from src import config, html_report, llm_summary, pipeline, reporting
 from src.visualization import macro_matrix
 
 
@@ -19,6 +25,8 @@ def main() -> None:
     ap.add_argument("--demo", action="store_true", help="use fully synthetic data (no API keys)")
     ap.add_argument("--proxy", action="store_true", help="use real collected calendar/news plus synthetic proxy P&L (not a real backtest)")
     ap.add_argument("--refresh", action="store_true", help="re-run Apify/Tavily/Exa ingestion")
+    ap.add_argument("--llm", action="store_true",
+                    help="(re)generate the written macro outlook with an LLM (ANTHROPIC_API_KEY or OPENAI_API_KEY)")
     ap.add_argument("--model", choices=["hgb", "ridge"], default="hgb")
     ap.add_argument("--top-k", type=int, default=config.TOP_K)
     ap.add_argument("--min-train-days", type=int, default=config.MIN_TRAIN_DAYS)
@@ -54,7 +62,28 @@ def main() -> None:
     ev_path = reporting.write_evaluation_report(
         wf, summary, reg, recs, len(trades), trades["permutation_id"].nunique() if "permutation_id" in trades else
         feats["panel"]["permutation_id"].nunique(), args.model, demo, proxy=proxy)
-    mo_path = reporting.write_macro_outlook(events, news, feats["daily_macro"], demo, proxy=proxy)
+    # ---- macro outlook: rule-based facts + (optional) LLM narrative grounded on a JSON context ----
+    as_of = pipeline.data_anchor(events, news) if (proxy or demo) else None
+    ctx_date = as_of if as_of is not None else pd.Timestamp.now().normalize()
+    ctx = llm_summary.build_context(events, news, feats["daily_macro"], ctx_date, proxy_pnl=proxy or demo)
+    (config.REPORTS_DIR / "llm_context.json").write_text(
+        json.dumps(ctx, indent=1, ensure_ascii=False), encoding="utf-8")
+    narrative_path = config.REPORTS_DIR / "macro_outlook_llm.md"
+    narrative = None
+    if args.llm:
+        text, meta = llm_summary.generate_outlook(ctx)
+        llm_summary.write_narrative(narrative_path, text, meta)
+        log.info("LLM outlook written to %s (%s)", narrative_path, meta["model"])
+    text, meta, status = llm_summary.read_narrative(narrative_path, ctx)
+    if status == "ok":
+        narrative = {"text": text, "meta": meta, "unverified": llm_summary.unverified_numbers(text, ctx)}
+    elif status == "stale":
+        log.warning("Cached LLM outlook is stale (data changed); run with --llm to regenerate. Using rule-based outlook.")
+    else:
+        log.info("No LLM outlook yet (run with --llm and an API key). Using rule-based outlook.")
+    mo_path = reporting.write_macro_outlook(events, news, feats["daily_macro"], demo, proxy=proxy,
+                                            as_of=as_of, narrative=narrative)
+    html_paths = html_report.write_html_reports(config.REPORTS_DIR)
 
     print("\n=== Out-of-sample performance ===")
     print(summary.round(3).to_string())
@@ -62,7 +91,7 @@ def main() -> None:
     print({k: round(v, 4) for k, v in reg.items()})
     print("\n=== Synthetic proxy rankings (NOT trading recommendations) ===" if proxy else "\n=== Next-day recommended permutations ===")
     print(recs.assign(date=recs["date"].dt.date).round(3).to_string(index=False))
-    print(f"\nReports: {ev_path}, {mo_path}\nFigures: {[p.name for p in figs]}")
+    print(f"\nReports: {ev_path}, {mo_path}\nHTML: {[p.name for p in html_paths]}\nFigures: {[p.name for p in figs]}")
 
 
 if __name__ == "__main__":
